@@ -24,7 +24,7 @@ if documento.__len__() == 11:
         else:
             digit1 = calculo
 
-        # Calculando o primeiro digito verificador
+        # Calculando o segundo digito verificador
         calculo = int(documento[0]) * 11 + int(documento[1]) * 10 + int(documento[2]) * 9 + int(documento[3]) * 8 + int(
             documento[4]) * 7 + int(documento[5]) * 6 + int(documento[6]) * 5 + int(documento[7]) * 4 + int(
             documento[8]) * 3 + digit1 * 2
@@ -44,7 +44,7 @@ elif documento.__len__() == 14:
 
         documento = str(documento)
 
-        # Verificando o padrão de CNPJ invalidos  00.000.0O0/0000-00,  11.111.111/1111-11...
+        # Verificando o padrão de CNPJ invalidos  00.000.000/0000-00,  11.111.111/1111-11...
 
         counter = 0
 
